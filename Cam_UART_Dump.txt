@@ -1,0 +1,1007 @@
+Error writing session log (raw mode) to file: putty.log
+
+Uncompress Ok!
+
+U-Boot 2016.11 (Jun 19 2020 - 17:46:49 +0800)hi3518ev300
+
+Relocation Offset is: 03731000
+Relocating to 43f31000, new gd at 43e90ef0, sp at 43e90ed0
+SPI Nor:  hifmc_ip_ver_check(44): Check Flash Memory Controller v100 ...hifmc_ip_ver_check(50):  Found
+hifmc_spi_nor_probe(1830): SPI Nor ID Table Version 1.0
+hifmc_spi_nor_probe(1855): SPI Nor(cs 0) ID: 0x20 0x70 0x17
+hifmc_spi_nor_probe(1920): Block:64KB hifmc_spi_nor_probe(1921): Chip:8MB hifmc_spi_nor_probe(1922): Name:"XM25QH64AHIG"
+hifmc100_spi_nor_probe(147): SPI Nor total size: 8MB
+NAND:  0 MiB
+MMC:   Card did not respond to voltage select!
+No SD device found !
+hisi-sdhci: 0
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+---------------CB1--------------------
+-----------DEMUX-------------------
+-----------DIR----------------------
+-----------DATA-----CB1----------------
+Net:   No ethernet found.
+__abortboot Hit any key to stop autoboot vstarcam:  0
+device 0 offset 0x80000, size 0x580000
+
+SF: 5767168 bytes @ 0x80000 Read: OK
+decompress ok!
+## Starting application at 0x40000000 ...
+********Hello Huawei LiteOS********
+
+version : Huawei LiteOS V200R002C00SPC050B012
+open-version : Huawei LiteOS 3.2.3
+build data : May 30 2020 17:00:55
+
+***************
+Huawei LiteOS # MMC dev init ...
+sd_mci_probe:1861: host1: detection is broken
+Mount procfs finished.
+Spi Nor ID:0x20 0x70 0x17 0x20 0x70 0x17 0x20 0x70
+Spi Nor Flash Info:
+Name:"XM25QH64AHIG" Size:8MB Block:64KB
+SYS_MEM_BASE [40000000], g_sys_mem_addr_end [42a00000]
+ -----hi_uart1_open line=37
+[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/mcu_uart.c<hi_uart1_open>:38]hi_uart1_open
+
+hi_uart1_open success [4]
+[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/mcu_uart.c<hi_uart1_open>:50]hi_uart1_open success [4]
+mcu host init ok
+SAMPLE_AUDIO_RegisterVQEModule ...
+hisi_wifi_shell_cmd_register init ...
+net init ...
+VPP2.0 V100R001C20 (lwIP) May 30 2020 17:00:43
+Ethernet start.
+************************************************************
+g_sys_mem_addr_end=0x0x42a00000,
+Date:Jul  8 2020.
+Time:14:57:25.
+==== online_flag=0, cmos_yuv_flag=0, sensor=gc2053, chip=hi3518ev300, board=demo====
+==== g_quick_start_flag=0 ====
+sysconfig init success!
+osal_proc_mkdir - parent is NULL! proc=0x40a67778
+mmz_start=0x42b00000, mmz_size=0x15
+mmz param= anonymous,0,0x42b00000,21M
+<6>[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:398]receive scm_versin [101.7]
+[D][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:402]------Hisilicon Media Memory Zone Manager
+register dev
+Hisilicon Watchdog Timer: 0.01 initialized. default_margin=60 sec (nodeamon= 0)
+hiwtdg init ok. ver=Jan 18 2020, 10:52:32.
+load sys.ko for Hi3516EV200...OK!
+load region.ko for HwakeUpReason[0][1:wifi 2:key 4:pir 32:charge]--------
+
+i3516EV200...OK!
+load vgs.ko for Hi3516EV200...OK!
+ISP Mod init!
+load vi.ko for Hi3516EV200...OK !
+load vpss.ko for Hi3516EV200...OK!
+load vo.ko for Hi3516EV200...OK!
+load chnl.ko for Hi3516EV200...OK!
+load vedu.ko for Hi3516EV200...OK!
+load rc.ko for Hi3516EV200...OK!
+load venc.ko for Hi3516EV200...OK!
+load h264e.ko for Hi3516EV200...OK!
+load h265e.ko for Hi3516EV200...OK!
+load jpege.ko for Hi3516EV200...OK!
+load ive.ko for Hi3516EV200...OK!
+insert audio
+load mipi_rx driver successful!
+sensor i2c init OK.
+load tde.ko for Hi3516EV200...OK!
+Load hifb.ko OK!
+hi_lsadc init ok. ver=Jul  8 2020, 14:57:21.
+SDK init ok...
+camera_Task 13,ret is 0
+hirtc init ok. ver=Oct 18 2019, 18:39:51.
+[M][1970/01/01/08:00:00][rtc/rtc_app.c<rtc_app_init>:345]RTC Get Time y:1970 m:10 d:12 15:50:49 Week:1
+[E][1970/01/01/08:00:00][rtc/rtc_app.c<DateTimeRead>:262]open /system/param/date.bin fail
+[E][1970/10/12/23:50:49][rtc/rtc_app.c<rtc_app_init>:371]settime stime:24594649
+[W][1970/10/12/23:50:49][param/param.c<NetWorkParamRead>:345]open /system/www/network.ini fail
+[M][1970/10/12/23:50:49][param/param.c<NetWorkParamInit>:381]NetWorkParamRead size = 436
+[t 494]rtc_app_init ...
+
+[M][1970/10/12/23:50:49][param/param.c<SysConfigInit>:159]SysConfigRead size = 740
+[M][1970/10/12/23:50:49][hisi1131_wifi/sample_hisi1131.c<ReadVuidAndUidParamFromFlash>:1705]---ReadVuidAndUidParamFromFlash----VUID[VB0036535HBDB]---
+
+[M][1970/10/12/23:50:49][hisi1131_wifi/sample_hisi1131.c<ReadVuidAndUidParamFromFlash>:1706]---ReadVuidAndUidParamFromFlash----UID[VSTC503075BLHHG]---
+
+[M][1970/10/12/23:50:49][param/param.c<SysParamInit>:725]SysParamRead size = 4052
+[M][1970/10/12/23:50:49][param/param.c<FactoryConfigInit>:1109]FactoryParamRead size = 1032
+[E][1970/10/12/23:50:49][param/param.c<FactoryParamRead>:1087]FactoryParamRead /system/param/factoryparam.ini fail
+[M][1970/10/12/23:50:49][param/param.c<SysParamGetSysVersionInit>:1069]sys version: *********************[48.101.220.12]
+[E][1970/10/12/23:50:49][param/param.c<UpgradeInfoRead>:1138]UpgradeInfoRead /system/param/upgradeinfo.ini fail
+[D][1970/10/12/23:50:49][gpio/gpio_v300.c<IrAdcInit>:1068]HiAdcStart
+[D][1970/10/12/23:50:49][gpio/gpio_v300.c<SetModelOnoffFlag>:691]g_modelonoff:0
+AudioOutputControl 0
+[M][1970/10/12/23:50:49][network/networkswitch.c<NetWorkStatusDamonThread>:2505]create NetWorkDamonThreadProc
+[M][1970/10/12/23:50:49][network/networkswitch.c<NetWorkStatusDamonThread>:2516]create NetWorkSleepManageThreadProc
+0xf0: 0x20
+
+
+
+0xf1: 0x53
+
+
+
+i2c_read_id:[0x2053]
+[W][1970/10/12/23:50:49][mpp-3518ev300/h264sensor.c<detect_sensor>:227]sensor id[0x1]
+[SetIspSensorType]-255: SENSOR0_TYPE[0]
+SAMPLE_VENC_SYS_Init,421,stVbConf.astCommPool[0].u64BlkSize = 737280, blkSize = 1
+SAMPLE_VENC_SYS_Init,421,[t 635]CloudRecordProc start
+[M][1970/10/12/23:50:49][p2p/vstcp2p.c<P2pStartProc>:835]ObjP2pInit
+[D][1970/10/12/23:50:49][p2p/vstcp2p.c<ObjP2pInit>:187]P2pUserInit
+[D][1970/10/stVbConf.astCommPool[1].u64BlkSize = 345600, blkSize = 4
+12/23:50:49][p2p/vstcp2p.c<ObjP2pInit>:207]find p2p server: VSTC
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<InitVideoEncoder>:2500]enType[265] res[1] sensorid[1] ispsensorid
+[SAMPLE_COMM_VI_GetMipiLaneMode]-1999: support this chip 3518e300
+[SAMPLE_COMM_VI_GetM[D][1970/10/12/23:50:49][p2p/vstcp2p.c<ObjP2pInit>:210]PPPP_GetAPIVersion = 50398209, P2pInitstring[]
+ipiLaneMode]-1999: support this chip 3518e300
+[SAMPLE_COMM_VI_SetMipiAttr]-2221: ============= MipiDev 0, SetMipiAttr enWDRMode: 0
+GC2053_SENSOR_1080P_30FPS_LINEAR_MODE
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoMirrorFlipSet>:534]VideoMirrorFlipSet type[0]
+[M][1970/10/McuReadyStatus[1],tryTmes[0],wakeup_reason[0]
+[SAMPLE_COMM_ISP_Thread]-374: ISP Dev 0 running !
+12/23:50:49][mpp-3518ev300/h264.c<init_video_param>:582]init_video_param
+ratemode[0], bitrate[1536], ratemodesub[0], bitr[E][1970/10/12/23:50:49][hisi1131_wifi/sample_hisi1131.c<hi_wifi_check_wakeup_flag>:386]wakeUpReson [0], wak_flag [0]
+atesub[512], ratemodesubsub[0], bitratesubsub[512]
+channel[0] ratemode[0] bitrate[1536]
+[M][1970/10/12/23:50:49][p2p/vstcp2p.c<P2pStartProc>:837]ObjP2pThread
+[M][1970/10/12/23:50:49][hisi1131_wifi/sample_hisi1131.c<hi_wifi_check_wakeup_flag>:442]----------wak_flag[0]----------
+
+hi1131 wifi start
+<3P2P media thread is start...
+......DisableAudioAO......
+AudioOutputControl 0
+[t 821]get first video frm
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=0,RC Mode=H265VBR,BitRate 1536--u32MinIQp[27]
+>start to register sdio modulesdio probe:pull up power on gpio
+[D][1970/10/12/23:50:49][p2p/vstcp2p.c<P2pListenThread>:450]PPPP_Listen : sysconfig->DeviceId[VSTC503075BLHHG] port[0] license[BLSGSL]
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+channel[1] ratemode[0] bitrate[512]
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=1,RC Mode=H265VBR,BitRate 614--u32MinIQp[22]
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+===SetVideoDefaultAEAttr====
+
+
+
+
+
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264.c<H264SetBitRate>:247]H264SetBitRate channel 0 ratemode 0 bybitrate 1536
+
+channel[0] ratemode[0] bitrate[1536]
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=0,RC Moplease input passwd:
+de=H265VBR,BitRate 1536--u32MinIQp[27]
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+[D][1970/10/12/23:50:49][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264.c<H264SetBitRate>:247]H264SetBitRate channel 1 ratemode 0 bybitrate 512
+
+channel[1] ratemode[0] bitrate[512]
+[D][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=1,RC Mode=H265VBR,BitRate 614--u32MinIQp[22]
+[M][1970/10/12/23:50:49][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+[M][1970/10/12/23:50:49][push/pushserver.c<pushServiceProThread>:4202]create ResetNotifyThread
+[D][1970/10/12/23:50:49][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:50:49][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+SysParamGetAudioO[E][1970/10/12/23:50:49][push/pushserver.c<ResetNotifyproc>:4046]not Need to reset
+utVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:50:49][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+[D][1970/10/12/23:50:49][audio/hiaudio.c<SetInPutVolume>:359]SetInPutVolume =31
+
+[D][1970/10/12/23:50:49][audio/hiaudio.c<SetInPutVolume>:368]ACODEC_SET_INPUT_VOL =46
+[D][1970/10/12/23:50:49][gpio/gpio_v300.c<SetModelOnoffFlag>:691]g_modelonoff:0
+[M][1970/10/12/23:50:49][audio/hiaudio.c<SetOutPutVolume>:399]vol[31] SetOutPutVolume =-9, range[-121,6]
+[M][1970/10/12/23:50:49][audio/hiaudio.c<AgingAlarmAudioThread>:1118]entry AgingAlarmAudioThread startUpDoorBell [0]
+[D][1970/10/12/23:50:49][search/search.c<SearchInit>:483]SearchInit success socketipc = 259
+[D][1970/10/12/23:50:49][search/search.c<SearchThreadProc>:406]===SearchThreadProc===>>>>>>>>>>>>>>>>>>>>>>>>>wait  [0]s
+[M][1970/10/12/23:50:49][livestream/audiostream.c<StreamAudioInit>:417]StreamAudioUserInit
+[M][1970/10/12/23:50:49][cgi/cgireboot.c<CgiRebootThread>:111]create RebootDayProc thread
+[M][1970/10/12/23:50:49][livestream/livestream.c<StreamLiveProc0>:464]StreamLiveProc0 0
+[D][1970/10/12/23:50:49][timeplan/timeplan.c<TimingPlanProc>:404]TimingPlanProc
+[D][1970/10/12/23:50:49][timeplan/timeplan.c<TimingPlanInfoRead>:327]timingPlanInfo.ini no exsit
+[M][1970/10/12/23:50:49][cgi/cgireboot.c<RebootDayProc>:39]GetModelOnoffFlag [0], lowPower [30]
+[t 1302]get first audio frm
+SDIO card vendor=0x296,device=0x5347
+new high speed SDIO card at address 0001
+......hisi_sdio_rescan **************ret = [0]
+hisi sdio load sucuess, sdio enum done.
+{oal_sdio_func_probe::shutdown wifi after init sdio.
+}sdio probe:pull down power on gpio
+[firmware_get_cfg]ram_reg_test_cfg maybe not exist!
+[plat_firmware_init]ram_reg_test_cfg maybe not exist, please check
+[plat_init]plat_init:: platform_main_init finish!
+[hisi_wlan_wifi_init]liteos plat init ok!
+[hcc_transfer_thread]hisi wifi hcc transfer thread enter
+[wal_cfg80211_init]wiphy_register start.
+[wal_cfg80211_init]wal_init_wlan_netdev wlan0.
+[wal_cfg80211_init]wal_init_wlan_netdev p2p0.
+[hmac_wow_set_host_state]{Hmac_wow::state[0]->[1]!}
+[hmac_wow_init]{hmac_wow_init, time = -1175153714, ul_wow_event = [000001DF];g_auc_timer_debug[0] = 3, g_auc_timer_debug[1]:3}
+host_main_init finish!
+Hi1131_host_main_init finish!
+
+Hi1131_app_init success
+Mac address is 70:3a:2d:00:3a:d5
+[D][1970/10/12/23:50:50][hisi1131_wifi/sample_hisi1131.c<NetWorkInitMac>:811]========mac=[70:3a:2d:00:3a:d5]===========
+-------------Read_ADC_Value[3184] --------------
+[M][1970/10/12/23:50:50][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3184]
+[E][1970/10/12/23:50:50][network/networkswitch.c<NetWorkDamonThreadProc>:1947]SleepWifiDisConnect [0]
+[M][1970/10/12/23:50:50][gpio/gpio_v300.c<HiHardwareProc>:1228]----------iso_value[6077]----------
+
+[D][1970/10/12/23:50:50][gpio/gpio_v300.c<CheckIrCutSwitch>:912]exchange to daytime, adc_ir_value[0]
+[D][1970/10/12/23:50:50][mpp-3518ev300/h264mpp.c<VideoSetColor2Grey>:1369]VideoSetColor2Grey : enable = 0
+GpioIrLedOut 0
+[hisi_wlan_get_wakeup_reason]{hisi_wlan_get_wakeup_reason::WOW, REASON[0].0:NUL,1:Mag,2:NetTCP,3:NetUDP,4:DisassocRx,
+5:DisassocTx,6:Auth,7:KeepAlive,8:Host,9:Log,10:SSID Wakeup.}
+
+******** usb_init in **********
+usb v2.14 2018-12-04 15:30
+usb 0x42a00000 ~+ 1024 KB
+XHCI: 64 bytes context size, 32-bit DMA
+usbus0: 5.0Gbps Super Speed USB v3.0
+******** usb_init ok**********
+
+[M][1970/10/12/23:50:51][network/networkswitch.c<VoiceWifiConfigCreatePthread>:1894]create wifiCheckToDecideSmartLinkReconfig
+[M][1970/10/12/23:50:51][network/networkswitch.c<NetWorkDamonThreadPruhub0: <vendor 0x0000 XHCI root HUB, class 9/0, rev 3.00/1.00, addr 1> on usbus0
+
+6500
+6500 6650 6800 6950 7100 7250 7400 7550 7700 7850 8000 8150 8300 8450 8600 8750 8900 9050 9200
+
+
+         start ....init_voiceRecog
+oc>:2021]usb_init ...startUpStatus[1]...
+real voice recognizer thread start:76
+[M][1970/10/12/23:50:51][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:284]*************************
+[M][1970/10/12/23:50:51][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:285]start ....init_voiceRecog
+[M][1970/10/12/23:50:51][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:286]*************************
+[M][1970/10/12/23:50:51][network/wifi_config_voice.c<voice_start_voiceRecog>:263]create Tthread start_routine
+[D][1970/10/12/23:50:51][audio/hiaudio.c<SetInPutVolume>:359]SetInPutVolume =31
+
+[D][1970/10/12/23:50:51][audio/hiaudio.c<SetInPutVolume>:368]ACODEC_SET_INPUT_VOL =46
+[M][1970/10/12/23:50:51][audio/hiaudio.c<SetOutPutVolume>:399]vol[30] SetOutPutVolume =-10, range[-121,6]
+[D][1970/10/12/23:50:51][audio/hiaudio.c<AudioWifiVoice>:1422]Test audio alarm....
+[M][1970/10/12/23:50:51][audio/hiaudio.c<AgingAlarmAudioThread>:1165]AlarmPlayManageInf.FilePath = /system/www/vwificonfig.wav
+AudioOutputControl 1
+uhub0: 1 port with 1 removable, self powered
+[M][1970/10/12/23:50:52][network/networkswitch.c<NetWorkSleepManageThreadProc>:2330]=================startUpStatus [1]=================
+[D][1970/10/12/23:50:52][network/networkswitch.c<NetWorkExchangeConnectProc>:1142]WifiPreType[0]
+
+
+...hi_start_sta...wait 1s...
+
+Successfully initialized wpa_supplicant
+[_wal_netdev_open]wal_netdev_open,dev_name is:wlan0
+[firmware_download_function]download firmware, count [1], current time [460000]us, max time [460000]us
+[wlget rates from device
+an_power_on]power on, count [1], current time [460000]us, max time [460000]us
+[hcc_change_state]hcc state off[0]=>on [1]
+hisi_customize_wifi::ampdu_tx_max_num:64wal_cfg_vap_h2d_evget rates from device
+ent succ
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg, flag[0], wow_event[000001DF]
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg,ssid wakeup,uc_ssid_set_flag:0
+[wal_set_random_mac_to_mib]wal_set_random_mac_to_mib,mac is:70:3a:2d
+wifi_event_cb,event:3
+hsl_status=0
+wpa_supplicant normal run!
+
+--------waitcnt[2]--------
+[D][1970/10/12/23:50:53][gpio/gpio_v300.c<HiHardwareProc>:1378]SetPIRFlag 0
+[D][1970/10/12/23:50:53][hisi1131_wifi/sample_hisi1131.c<hi_sta_scan>:1051]wpa_cli_scan start success
+
+--------waitcnt[1]--------
+wifi_event_cb,event:0
+Scan results available
+[D][1970/10/12/23:50:54][hisi1131_wifi/sample_hisi1131.c<hi_get_scan_results>:1258]wifiSaoftApScanCnt [7], wifiscancnt [7]
+[D][1970/10/12/23:50:54][network/networkswitch.c<NetWorkExchangeConnectProc>:1177]wifiCnt [7], scan waittimes[11]
+
+--------waitcnt[0]--------
+wal_netdev_stop,dev_name is:wlan0
+[plat_pm]wlan_pm_close start!!
+[hcc_change_state]hcc state on [1]=>off[0]
+Clear queue:1,total 1 hcc tx pkts!
+Clear queue:2,total 1 hcc rx pkts!
+AudioOutputControl 0
+[D][1970/10/12/23:50:56][network/networkswitch.c<NetWorkExchangeConnectProc>:1193]start SoftAp
+
+audioRateTo44!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:50:56][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[M][1970/10/12/23:50:56][param/param.c<GetVuidNumberSequence>:1854]sn [0036535]
+start dhcps...
+[firmware_download_function]download firmware, count [2], current time [460000]us, max time [460000]us
+[wlget rates from device
+an_power_on]power on, count [2], current time [460000]us, max time [460000]us
+[hcc_change_state]hcc state off[0]=>on [1]
+[hmaget rates from device
+c_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg, flag[0], wow_event[000001DF]
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg,ssid wakeup,uc_ssid_set_flag:0
+wal_cfg80211_change_virtual_intf,dev_name is:wlan0
+[wal_set_random_mac_to_mib]wal_set_random_mac_to_mib,mac is:70:3a:2d
+Using interface wlan0 with hwaddr 70:3a:2d:00:3a:d5 and ssid "@MC-0036535"
+wal_start_vap,dev_name is:wlan0
+wal_cfg80211_start_ap::exit.
+hostapd_event=0
+hsl_status=0
+
+--------waitcnt[2]--------
+[D][1970/10/12/23:50:57][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:50:57][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 38
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:50:57][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 1024
+
+[M][1970/10/12/23:50:57][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:50:57][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+@@@@@@@@@@@@@@@ hostapd start succ
+[D][1970/10/12/23:50:57][network/networkswitch.c<NetWorkGetInfo>:558]NetWorkGetInfo ethOrWifi [0]
+[D][1970/10/12/23:50:57][network/networkswitch.c<NetWorkGetInfo>:598]networkparam->NetWorkParam.Ipaddr [192.168.168.1]
+[D][1970/10/12/23:50:57][network/networkswitch.c<NetWorkGetInfo>:619]networkparam->NetWorkParam.Ipaddr [255.255.255.0]
+Mac address is 70:3a:2d:00:3a:d5
+[M][1970/10/12/23:50:57][param/param.c<SysConfigSave>:248]open /system/param/factory.ini success
+[D][1970/10/12/23:50:57][network/networkswitch.c<NetWorkExchangeConnectProc>:1435]link:0 WifiPreType:3
+
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!
+--------waitcnt[1]--------
+add 30k noise data to init recognizer
+[D][1970/10/12/23:50:59][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[298]------
+
+--------waitcnt[0]--------
+0xf0: 0x20
+
+
+
+0xf1: 0x53
+
+
+
+add 30k noise data to init recognizer
+signalAnalyser init:3.161518
+
+         voice_recorderRecognizerStart .......!
+
+
+         lxyrecognizerStart .......!
+
+------------------recognize invalid data, errorCode:100, error:not enough signal
+[D][1970/10/12/23:51:01][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[296]------
+-------------Read_ADC_Value[3180] --------------
+
+         voice_recorderRecognizerStart .......!
+
+
+         lxyrecognizerStart .......!
+
+------------------recognize invalid data, errorCode:100, error:not enough signal
+
+         voice_recorderRecognizerStart .......!
+
+
+         lxyrecognizerStart .......!
+
+------------------recognize invalid data, errorCode:100, error:not enough signal
+[D][1970/10/12/23:51:03][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[294]------
+[D][1970/10/12/23:51:05][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[292]------
+[D][1970/10/12/23:51:06][gpio/gpio_v300.c<HiHardwareProc>:1378]SetPIRFlag 0
+-------------Read_ADC_Value[3176] --------------
+[D][1970/10/12/23:51:07][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[290]------
+[D][1970/10/12/23:51:09][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[288]------
+[D][1970/10/12/23:51:11][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[286]------
+-------------Read_ADC_Value[3176] --------------
+[D][1970/10/12/23:51:13][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[284]------
+[D][1970/10/12/23:51:15][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[282]------
+[D][1970/10/12/23:51:17][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[280]------
+-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:19][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[278]------
+[M][1970/10/12/23:51:19][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3172]
+[D][1970/10/12/23:51:21][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[276]------
+[D][1970/10/12/23:51:23][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[274]------
+-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:25][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[272]------
+[D][1970/10/12/23:51:27][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[270]------
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:29][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[268]------
+[D][1970/10/12/23:51:31][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[266]------
+[D][1970/10/12/23:51:33][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[264]------
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:35][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[262]------
+[D][1970/10/12/23:51:37][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[260]------
+[D][1970/10/12/23:51:39][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[258]------
+[D][1970/10/12/23:51:39][day2night.c<GetDay2NightState>:504]exp_fliter_L =1
+-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:40][day2night.c<GetDay2NightState>:504]exp_fliter_L =2
+[D][1970/10/12/23:51:41][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[256]------
+[D][1970/10/12/23:51:41][day2night.c<GetDay2NightState>:504]exp_fliter_L =3
+[M][1970/10/12/23:51:42][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3172]
+[D][1970/10/12/23:51:42][day2night.c<GetDay2NightState>:504]exp_fliter_L =4
+[D][1970/10/12/23:51:43][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[254]------
+[D][1970/10/12/23:51:43][day2night.c<GetDay2NightState>:504]exp_fliter_L =5
+[D][1970/10/12/23:51:44][day2night.c<GetDay2NightState>:504]exp_fliter_L =6
+[D][1970/10/12/23:51:45][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[252]------
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!-------------Read_ADC_Value[3172] --------------
+[D][1970/10/12/23:51:45][day2night.c<GetDay2NightState>:504]exp_fliter_L =7
+[D][1970/10/12/23:51:46][day2night.c<GetDay2NightState>:504]exp_fliter_L =8
+[D][1970/10/12/23:51:47][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[250]------
+[D][1970/10/12/23:51:49][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[248]------
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!-------------Read_ADC_Value[3168] --------------
+[D][1970/10/12/23:51:51][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[246]------
+[D][1970/10/12/23:51:53][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[244]------
+[D][1970/10/12/23:51:55][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[242]------
+-------------Read_ADC_Value[3168] --------------
+[D][1970/10/12/23:51:57][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[240]------
+[D][1970/10/12/23:51:57][audio/hiaudio.c<AudioWifiVoice>:1422]Test audio alarm....
+[M][1970/10/12/23:51:57][audio/hiaudio.c<AgingAlarmAudioThread>:1165]AlarmPlayManageInf.FilePath = /system/www/vwificonfig.wav
+udioRateTo8!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:51:57][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[D][1970/10/12/23:51:58][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:51:58][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:51:58][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+AudioOutputControl 1
+[D][1970/10/12/23:51:59][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[238]------
+[D][1970/10/12/23:52:00][gpio/gpio_v300.c<HiHardwareProc>:1378]SetPIRFlag 0
+[D][1970/10/12/23:52:01][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[236]------
+-------------Read_ADC_Value[3160] --------------
+AudioOutputControl 0
+
+audioRateTo44!
+[D][1970/10/12/23:52:03][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[234]------
+[D][1970/10/12/23:52:03][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:03][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 38
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:52:03][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 1024
+
+[M][1970/10/12/23:52:03][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:03][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[D][1970/10/12/23:52:05][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[232]------
+[M][1970/10/12/23:52:05][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3160]
+[D][1970/10/12/23:52:07][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[230]------
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!-------------Read_ADC_Value[3168] --------------
+[D][1970/10/12/23:52:09][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[228]------
+[D][1970/10/12/23:52:11][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[226]------
+[M][1970/10/12/23:52:11][gpio/gpio_v300.c<FactoryResetDoCmd>:747]======default FactoryResetDoCmd======
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!udioRateTo8!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:52:11][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[D][1970/10/12/23:52:12][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:12][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:52:12][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+
+audioRateTo44!
+[M][1970/10/12/23:52:12][audio/hiaudio.c<AgingAlarmAudioThread>:1165]AlarmPlayManageInf.FilePath = /system/www/resetok.wav
+[D][1970/10/12/23:52:13][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[224]------
+[D][1970/10/12/23:52:13][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:13][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 38
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:52:13][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 1024
+
+[M][1970/10/12/23:52:13][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:13][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[E][1970/10/12/23:52:14][param/param.c<DeleteTmpWifiParamFile>:808]unlink /system/www/tmpwifi.ini failed
+
+[E][1970/10/12/23:52:14][gpio/gpio_v300.c<FactoryResetDoCmd>:782]unlink /system/param/serverWakeinfo.ini failed
+
+[E][1970/10/12/23:52:14][gpio/gpio_v300.c<FactoryResetDoCmd>:795]unlink /system/www/network.ini failed
+
+udioRateTo8!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:52:14][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[D][1970/10/12/23:52:15][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[222]------
+[E][1970/10/12/23:52:15][gpio/gpio_v300.c<FactoryResetDoCmd>:810]wait FactoryResetDoCmd
+[D][1970/10/12/23:52:15][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:15][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:52:15][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:52:15][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:15][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:52:15][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:52:15][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:52:16][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+AudioOutputControl 1
+[E][1970/10/12/23:52:16][audio/hiaudio.c<audioRateTo44>:1387]No Switch 44K play tip
+[E][1970/10/12/23:52:16][gpio/gpio_v300.c<FactoryResetDoCmd>:810]wait FactoryResetDoCmd
+[E][1970/10/12/23:52:17][audio/hiaudio.c<audioRateTo44>:1387]No Switch 44K play tip
+[D][1970/10/12/23:52:17][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[220]------
+[E][1970/10/12/23:52:17][gpio/gpio_v300.c<FactoryResetDoCmd>:810]wait FactoryResetDoCmd
+[E][1970/10/12/23:52:18][audio/hiaudio.c<audioRateTo44>:1387]No Switch 44K play tip
+[E][1970/10/12/23:52:18][gpio/gpio_v300.c<FactoryResetDoCmd>:810]wait FactoryResetDoCmd
+[E][1970/10/12/23:52:19][audio/hiaudio.c<audioRateTo44>:1387]No Switch 44K play tip
+[D][1970/10/12/23:52:19][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[218]------
+[E][1970/10/12/23:52:19][gpio/gpio_v300.c<FactoryResetDoCmd>:810]wait FactoryResetDoCmd
+[E][1970/10/12/23:52:20][audio/hiaudio.c<audioRateTo44>:1387]No Switch 44K play tip
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!AudioOutputControl 0
+[E][1970/10/12/23:52:20][gpio/gpio_v300.c<FactoryResetDoCmd>:819]FactoryResetDoCmd ok
+Failed at HI_SCENE_Set3DNR: LINE: 1556 with 0xa0078003!
+audioRateTo44!
+[D][1970/10/12/23:52:21][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[216]------
+
+Uncompress Ok!
+
+U-Boot 2016.11 (Jun 19 2020 - 17:46:49 +0800)hi3518ev300
+
+Relocation Offset is: 03731000
+Relocating to 43f31000, new gd at 43e90ef0, sp at 43e90ed0
+SPI Nor:  hifmc_ip_ver_check(44): Check Flash Memory Controller v100 ...hifmc_ip_ver_check(50):  Found
+hifmc_spi_nor_probe(1830): SPI Nor ID Table Version 1.0
+hifmc_spi_nor_probe(1855): SPI Nor(cs 0) ID: 0x20 0x70 0x17
+hifmc_spi_nor_probe(1920): Block:64KB hifmc_spi_nor_probe(1921): Chip:8MB hifmc_spi_nor_probe(1922): Name:"XM25QH64AHIG"
+hifmc100_spi_nor_probe(147): SPI Nor total size: 8MB
+NAND:  0 MiB
+MMC:   Card did not respond to voltage select!
+No SD device found !
+hisi-sdhci: 0
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+---------------CB1--------------------
+-----------DEMUX-------------------
+-----------DIR----------------------
+-----------DATA-----CB1----------------
+Net:   No ethernet found.
+__abortboot Hit any key to stop autoboot vstarcam:  0
+device 0 offset 0x80000, size 0x580000
+
+SF: 5767168 bytes @ 0x80000 Read: OK
+decompress ok!
+## Starting application at 0x40000000 ...
+********Hello Huawei LiteOS********
+
+version : Huawei LiteOS V200R002C00SPC050B012
+open-version : Huawei LiteOS 3.2.3
+build data : May 30 2020 17:00:55
+
+***************
+Huawei LiteOS # MMC dev init ...
+sd_mci_probe:1861: host1: detection is broken
+Mount procfs finished.
+Spi Nor ID:0x20 0x70 0x17 0x20 0x70 0x17 0x20 0x70
+Spi Nor Flash Info:
+Name:"XM25QH64AHIG" Size:8MB Block:64KB
+SYS_MEM_BASE [40000000], g_sys_mem_addr_end [42a00000]
+ -----hi_uart1_open line=37
+[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/mcu_uart.c<hi_uart1_open>:38]hi_uart1_open
+
+hi_uart1_open success [4]
+[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/mcu_uart.c<hi_uart1_open>:50]hi_uart1_open success [4]
+mcu host init ok
+SAMPLE_AUDIO_RegisterVQEModule ...
+hisi_wifi_shell_cmd_register init ...
+net init ...
+VPP2.0 V100R001C20 (lwIP) May 30 2020 17:00:43
+Ethernet start.
+************************************************************
+g_sys_mem_addr_end=0x0x42a00000,
+Date:Jul  8 2020.
+Time:14:57:25.
+==== online_flag=0, cmos_yuv_flag=0, sensor=gc2053, chip=hi3518ev300, board=demo====
+==== g_quick_start_flag=0 ====
+sysconfig init success!
+osal_proc_mkdir - parent is NULL! proc=0x40a67778
+mmz_start=0x42b00000, mmz_size=0x15
+mmz param= anonymous,0,0x42b00000,21M
+<6>[M][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:398]receive scm_versin [101.7]
+[D][1970/01/01/08:00:00][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:402]------Hisilicon Media Memory Zone Manager
+register dev
+Hisilicon Watchdog Timer: 0.01 initialized. default_margin=60 sec (nodeamon= 0)
+hiwtdg init ok. ver=Jan 18 2020, 10:52:32.
+load sys.ko for Hi3516EV200...OK!
+load region.ko for HwakeUpReason[0][1:wifi 2:key 4:pir 32:charge]--------
+
+i3516EV200...OK!
+load vgs.ko for Hi3516EV200...OK!
+ISP Mod init!
+load vi.ko for Hi3516EV200...OK !
+load vpss.ko for Hi3516EV200...OK!
+load vo.ko for Hi3516EV200...OK!
+load chnl.ko for Hi3516EV200...OK!
+load vedu.ko for Hi3516EV200...OK!
+load rc.ko for Hi3516EV200...OK!
+load venc.ko for Hi3516EV200...OK!
+load h264e.ko for Hi3516EV200...OK!
+load h265e.ko for Hi3516EV200...OK!
+load jpege.ko for Hi3516EV200...OK!
+load ive.ko for Hi3516EV200...OK!
+insert audio
+load mipi_rx driver successful!
+sensor i2c init OK.
+load tde.ko for Hi3516EV200...OK!
+Load hifb.ko OK!
+hi_lsadc init ok. ver=Jul  8 2020, 14:57:21.
+SDK init ok...
+camera_Task 13,ret is 0
+hirtc init ok. ver=Oct 18 2019, 18:39:51.
+[M][1970/01/01/08:00:00][rtc/rtc_app.c<rtc_app_init>:345]RTC Get Time y:1970 m:10 d:12 15:52:23 Week:1
+[E][1970/01/01/08:00:00][rtc/rtc_app.c<DateTimeRead>:262]open /system/param/date.bin fail
+[E][1970/10/12/23:52:23][rtc/rtc_app.c<rtc_app_init>:371]settime stime:24594743
+[W][1970/10/12/23:52:23][param/param.c<NetWorkParamRead>:345]open /system/www/network.ini fail
+[M][1970/10/12/23:52:23][param/param.c<NetWorkParamInit>:381]NetWorkParamRead size = 436
+[t 494]rtc_app_init ...
+
+[M][1970/10/12/23:52:23][param/param.c<SysConfigInit>:159]SysConfigRead size = 740
+[M][1970/10/12/23:52:23][hisi1131_wifi/sample_hisi1131.c<ReadVuidAndUidParamFromFlash>:1705]---ReadVuidAndUidParamFromFlash----VUID[VB0036535HBDB]---
+
+[M][1970/10/12/23:52:23][hisi1131_wifi/sample_hisi1131.c<ReadVuidAndUidParamFromFlash>:1706]---ReadVuidAndUidParamFromFlash----UID[VSTC503075BLHHG]---
+
+[M][1970/10/12/23:52:23][param/param.c<SysParamInit>:725]SysParamRead size = 4052
+[E][1970/10/12/15:52:23][param/param.c<SysParamRead>:682]open /system/www/system.ini fail
+[D][1970/10/12/15:52:23][param/param.c<SysParamRead>:687]open /system/www/system-b.ini
+[D][1970/10/12/23:52:23][param/param.c<SysParamRead>:694]read /system/www/system-b.ini success
+[M][1970/10/12/23:52:23][param/param.c<FactoryConfigInit>:1109]FactoryParamRead size = 1032
+[E][1970/10/12/23:52:23][param/param.c<FactoryParamRead>:1087]FactoryParamRead /system/param/factoryparam.ini fail
+[M][1970/10/12/23:52:23][param/param.c<SysParamGetSysVersionInit>:1069]sys version: *********************[48.101.220.12]
+[E][1970/10/12/23:52:23][param/param.c<UpgradeInfoRead>:1138]UpgradeInfoRead /system/param/upgradeinfo.ini fail
+[D][1970/10/12/23:52:23][gpio/gpio_v300.c<IrAdcInit>:1068]HiAdcStart
+[D][1970/10/12/23:52:23][gpio/gpio_v300.c<SetModelOnoffFlag>:691]g_modelonoff:0
+AudioOutputControl 0
+[M][1970/10/12/23:52:23][network/networkswitch.c<NetWorkStatusDamonThread>:2505]create NetWorkDamonThreadProc
+[M][1970/10/12/23:52:23][network/networkswitch.c<NetWorkStatusDamonThread>:2516]create NetWorkSleepManageThreadProc
+0xf0: 0x20
+
+
+
+0xf1: 0x53
+
+
+
+i2c_read_id:[0x2053]
+[W][1970/10/12/23:52:23][mpp-3518ev300/h264sensor.c<detect_sensor>:227]sensor id[0x1]
+[SetIspSensorType]-255: SENSOR0_TYPE[0]
+SAMPLE_VENC_SYS_Init,4[t 674]CloudRecordProc start
+[M][1970/10/12/23:52:23][p2p/vstcp2p.c<P2pStartProc>:835]ObjP2pInit
+[D][1970/10/12/23:52:23][p2p/vstcp2p.c<ObjP2pInit>:187]P2pUserInit
+[D][1970/1021,stVbConf.astCommPool[0].u64BlkSize = 737280, blkSize = 1
+SAMPLE_VENC_SYS_Init,421,stVbConf.astCommPool[1].u64BlkSize = 345600, blkSize = 4
+/12/23:52:23][p2p/vstcp2p.c<ObjP2pInit>:207]find p2p server: VSTC
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<InitVideoEncoder>:2500]enType[265] res[1] sensorid[1] ispsensorid
+[SAMPLE_COMM_VI_GetMipiLaneMode]-1999: support this chip 3518e300
+[SAMPLE_COMM_VI_GetMipiLaneMode]-1999: support th[D][1970/10/12/23:52:23][p2p/vstcp2p.c<ObjP2pInit>:210]PPPP_GetAPIVersion = 50398209, P2pInitstring[]
+is chip 3518e300
+[SAMPLE_COMM_VI_SetMipiAttr]-2221: ============= MipiDev 0, SetMipiAttr enWDRMode: 0
+GC2053_SENSOR_1080P_30FPS_LINEAR_MODE
+McuReadyStatus[1],tryTmes[0],wakeup_reason[0]
+[E][1970/10/12/23:52:23][hisi1131_wifi/sample_hisi1131.c<hi_wifi_check_wakeup_flag>:386]wakeUpReson [0], wak_flag [0]
+[M][1970/10/12/23:52:23][hisi1131_wifi/sample_hisi1131.c<hi_wifi_check_wakeup_flag>:442]----------wak_flag[0]----------
+
+hi1131 wifi start
+<3>start to register sdio modulesdio probe:pull up power on gpio
+[SAMPLE_COMM_ISP_Thread]-374: ISP Dev 0 running !
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoMirrorFlipSet>:534]VideoMirrorFlipSet type[0]
+[M][1970/10/12/23:52:23][p2p/vstcp2p.c<P2pStartProc>:837]ObjP2pThread
+[M][1970/10/12/23:52:23][mpP2P media thread is start...
+......DisableAudioAO......
+AudioOutputControl 0
+p-3518ev300/h264.c<init_video_param>:582]init_video_param
+ratemode[0], bitrate[1536], ratemodesub[0], bitratesub[512], ratemodesubsub[0], bitrate[t 844]get first video frm
+[D][1970/10/12/23:52:23][p2p/vstcp2p.c<P2pListenThread>:450]PPPP_Listen : sysconfig->DeviceId[VSTC503075BLHHG] port[0] license[BLSGSL]
+subsub[512]
+channel[0] ratemode[0] bitrate[1536]
+[D][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=0,RC Mode=H265VBR,BitRate 1536--u32MinIQp[27]
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+channel[1] ratemode[0] bitrate[512]
+[D][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=1,RC Mode=H265VBR,BitRate 614--u32MinIQp[22]
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+===SetVideoDefaultAEAttr====
+
+
+
+
+
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/1please input passwd:
+0/12/23:52:23][mpp-3518ev300/h264.c<H264SetBitRate>:247]H264SetBitRate channel 0 ratemode 0 bybitrate 1536
+
+channel[0] ratemode[0] bitrate[1536]
+[D][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=0,RC Mode=H265VBR,BitRate 1536--u32MinIQp[27]
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+[D][1970/10/12/23:52:23][param/param.c<SysParamWrite>:600]save /system/www/system.ini success
+[D][1970/10/12/23:52:23][mpp-3518ev300/h264.c<H264SetBitRate>:247]H264SetBitRate channel 1 ratemode 0 bybitrate 512
+
+channel[1] ratemode[0] bitrate[512]
+[D][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1247]Channel=1,RC Mode=H265VBR,BitRate 614--u32MinIQp[22]
+[M][1970/10/12/23:52:23][mpp-3518ev300/h264mpp.c<VideoSetBitRate>:1272]VENC_Set_EX_RC_Param
+[M][1970/10/12/23:52:23][push/pushserver.c<pushServiceProThread>:4202]create ResetNotifyThread
+[D][1970/10/12/23:52:23][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:23][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[E][1970/10/12/23:52:23][push/pushserver.c<ResetNotifyproc>:4046]not Need to reset
+[M][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:52:23][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+[D][1970/10/12/23:52:23][audio/hiaudio.c<SetInPutVolume>:359]SetInPutVolume =31
+
+[D][1970/10/12/23:52:23][audio/hiaudio.c<SetInPutVolume>:368]ACODEC_SET_INPUT_VOL =46
+[M][1970/10/12/23:52:23][audio/hiaudio.c<SetOutPutVolume>:399]vol[31] SetOutPutVolume =-9, range[-121,6]
+[D][1970/10/12/23:52:23][gpio/gpio_v300.c<SetModelOnoffFlag>:691]g_modelonoff:0
+[M][1970/10/12/23:52:23][audio/hiaudio.c<AgingAlarmAudioThread>:1118]entry AgingAlarmAudioThread startUpDoorBell [0]
+[D][1970/10/12/23:52:23][search/search.c<SearchInit>:483]SearchInit success socketipc = 259
+[D][1970/10/12/23:52:23][search/search.c<SearchThreadProc>:406]===SearchThreadProc===>>>>>>>>>>>>>>>>>>>>>>>>>wait  [0]s
+[M][1970/10/12/23:52:23][livestream/audiostream.c<StreamAudioInit>:417]StreamAudioUserInit
+[M][1970/10/12/23:52:23][cgi/cgireboot.c<CgiRebootThread>:111]create RebootDayProc thread
+[M][1970/10/12/23:52:23][livestream/livestream.c<StreamLiveProc0>:464]StreamLiveProc0 0
+[D][1970/10/12/23:52:23][timeplan/timeplan.c<TimingPlanProc>:404]TimingPlanProc
+[D][1970/10/12/23:52:23][timeplan/timeplan.c<TimingPlanInfoRead>:327]timingPlanInfo.ini no exsit
+[t 1322]get first audio frm
+[M][1970/10/12/23:52:23][cgi/cgireboot.c<RebootDayProc>:39]GetModelOnoffFlag [0], lowPower [30]
+SDIO card vendor=0x296,device=0x5347
+new high speed SDIO card at address 0001
+......hisi_sdio_rescan **************ret = [0]
+hisi sdio load sucuess, sdio enum done.
+{oal_sdio_func_probe::shutdown wifi after init sdio.
+}sdio probe:pull down power on gpio
+[firmware_get_cfg]ram_reg_test_cfg maybe not exist!
+[plat_firmware_init]ram_reg_test_cfg maybe not exist, please check
+[plat_init]plat_init:: platform_main_init finish!
+[hisi_wlan_wifi_init]liteos plat init ok!
+[hcc_transfer_thread]hisi wifi hcc transfer thread enter
+[wal_cfg80211_init]wiphy_register start.
+[wal_cfg80211_init]wal_init_wlan_netdev wlan0.
+[wal_cfg80211_init]wal_init_wlan_netdev p2p0.
+[hmac_wow_set_host_state]{Hmac_wow::state[0]->[1]!}
+[hmac_wow_init]{hmac_wow_init, time = -1175059712, ul_wow_event = [000001DF];g_auc_timer_debug[0] = 3, g_auc_timer_debug[1]:3}
+host_main_init finish!
+Hi1131_host_main_init finish!
+
+Hi1131_app_init success
+Mac address is 70:3a:2d:00:3a:d5
+[D][1970/10/12/23:52:24][hisi1131_wifi/sample_hisi1131.c<NetWorkInitMac>:811]========mac=[70:3a:2d:00:3a:d5]===========
+-------------Read_ADC_Value[3168] --------------
+[M][1970/10/12/23:52:24][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3168]
+[E][1970/10/12/23:52:24][network/networkswitch.c<NetWorkDamonThreadProc>:1947]SleepWifiDisConnect [0]
+[M][1970/10/12/23:52:24][gpio/gpio_v300.c<HiHardwareProc>:1228]----------iso_value[8306]----------
+
+[D][1970/10/12/23:52:24][gpio/gpio_v300.c<CheckIrCutSwitch>:922]exchange to night, adc_ir_value[0]
+[D][1970/10/12/23:52:24][mpp-3518ev300/h264mpp.c<VideoSetColor2Grey>:1369]VideoSetColor2Grey : enable = 1
+GpioIrLedOut 1
+[hisi_wlan_get_wakeup_reason]{hisi_wlan_get_wakeup_reason::WOW, REASON[0].0:NUL,1:Mag,2:NetTCP,3:NetUDP,4:DisassocRx,
+5:DisassocTx,6:Auth,7:KeepAlive,8:Host,9:Log,10:SSID Wakeup.}
+
+******** usb_init in **********
+usb v2.14 2018-12-04 15:30
+usb 0x42a00000 ~+ 1024 KB
+XHCI: 64 bytes context size, 32-bit DMA
+usbus0: 5.0Gbps Super Speed USB v3.0
+******** usb_init ok**********
+
+[M][1970/10/12/23:52:25][network/networkswitch.c<VoiceWifiConfigCreatePthread>:1894]create wifiCheckToDecideSmartLinkReconfig
+[M][1970/10/12/23:52:25][network/networkswitch.c<NetWorkDamonThreadPuhub0: <vendor 0x0000 XHCI root HUB, class 9/0, rev 3.00/1.00, addr 1> on usbus0
+
+6500
+6500 6650 6800 6950 7100 7250 7400 7550 7700 7850 8000 8150 8300 8450 8600 8750 8900 9050 9200
+
+
+         start ....init_voiceRecog
+roc>:2021]usb_init ...startUpStatus[1]...
+real voice recognizer thread start:76
+[M][1970/10/12/23:52:25][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:284]*************************
+[M][1970/10/12/23:52:25][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:285]start ....init_voiceRecog
+[M][1970/10/12/23:52:25][network/wifi_config_voice.c<wifiCheckToDecideSmartLinkReconfig>:286]*************************
+[M][1970/10/12/23:52:25][network/wifi_config_voice.c<voice_start_voiceRecog>:263]create Tthread start_routine
+[D][1970/10/12/23:52:25][audio/hiaudio.c<SetInPutVolume>:359]SetInPutVolume =31
+
+[D][1970/10/12/23:52:25][audio/hiaudio.c<SetInPutVolume>:368]ACODEC_SET_INPUT_VOL =46
+[M][1970/10/12/23:52:25][audio/hiaudio.c<SetOutPutVolume>:399]vol[30] SetOutPutVolume =-10, range[-121,6]
+[D][1970/10/12/23:52:25][audio/hiaudio.c<AudioWifiVoice>:1422]Test audio alarm....
+[M][1970/10/12/23:52:25][audio/hiaudio.c<AgingAlarmAudioThread>:1165]AlarmPlayManageInf.FilePath = /system/www/vwificonfig.wav
+AudioOutputControl 1
+uhub0: 1 port with 1 removable, self powered
+[M][1970/10/12/23:52:26][network/networkswitch.c<NetWorkSleepManageThreadProc>:2330]=================startUpStatus [1]=================
+[D][1970/10/12/23:52:26][network/networkswitch.c<NetWorkExchangeConnectProc>:1142]WifiPreType[0]
+
+
+...hi_start_sta...wait 1s...
+
+Successfully initialized wpa_supplicant
+[_wal_netdev_open]wal_netdev_open,dev_name is:wlan0
+[firmware_download_function]download firmware, count [1], current time [460000]us, max time [460000]us
+get rates from device
+[wlan_power_on]power on, count [1], current time [470000]us, max time [470000]us
+[hcc_change_state]hcc state off[0]=>on [1]
+hisi_customize_wifi::ampdu_tx_max_num:64wal_get rates from device
+cfg_vap_h2d_event succ
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg, flag[0], wow_event[000001DF]
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg,ssid wakeup,uc_ssid_set_flag:0
+[wal_set_random_mac_to_mib]wal_set_random_mac_to_mib,mac is:70:3a:2d
+wifi_event_cb,event:3
+hsl_status=0
+wpa_supplicant normal run!
+
+--------waitcnt[2]--------
+[D][1970/10/12/23:52:27][gpio/gpio_v300.c<HiHardwareProc>:1378]SetPIRFlag 0
+[D][1970/10/12/23:52:27][hisi1131_wifi/sample_hisi1131.c<hi_sta_scan>:1051]wpa_cli_scan start success
+
+--------waitcnt[1]--------
+wifi_event_cb,event:0
+Scan results available
+[D][1970/10/12/23:52:28][hisi1131_wifi/sample_hisi1131.c<hi_get_scan_results>:1258]wifiSaoftApScanCnt [8], wifiscancnt [9]
+[D][1970/10/12/23:52:28][network/networkswitch.c<NetWorkExchangeConnectProc>:1177]wifiCnt [9], scan waittimes[11]
+
+--------waitcnt[0]--------
+wal_netdev_stop,dev_name is:wlan0
+[plat_pm]wlan_pm_close start!!
+[hcc_change_state]hcc state on [1]=>off[0]
+Clear queue:1,total 1 hcc tx pkts!
+AudioOutputControl 0
+[D][1970/10/12/23:52:30][network/networkswitch.c<NetWorkExchangeConnectProc>:1193]start SoftAp
+
+audioRateTo44!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:52:30][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[M][1970/10/12/23:52:30][param/param.c<GetVuidNumberSequence>:1854]sn [0036535]
+start dhcps...
+[firmware_download_function]download firmware, count [2], current time [450000]us, max time [460000]us
+get rates from device
+[wlan_power_on]power on, count [2], current time [450000]us, max time [470000]us
+[hcc_change_state]hcc state off[0]=>on [1]
+[hmaget rates from device
+c_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg, flag[0], wow_event[000001DF]
+[hmac_wow_set_dmac_cfg]hmac_wow_set_dmac_cfg,ssid wakeup,uc_ssid_set_flag:0
+wal_cfg80211_change_virtual_intf,dev_name is:wlan0
+[wal_set_random_mac_to_mib]wal_set_random_mac_to_mib,mac is:70:3a:2d
+Using interface wlan0 with hwaddr 70:3a:2d:00:3a:d5 and ssid "@MC-0036535"
+wal_start_vap,dev_name is:wlan0
+wal_cfg80211_start_ap::exit.
+hostapd_event=0
+hsl_status=0
+
+--------waitcnt[2]--------
+[D][1970/10/12/23:52:31][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:52:31][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 38
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:52:31][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 1024
+
+[M][1970/10/12/23:52:31][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:52:31][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+@@@@@@@@@@@@@@@ hostapd start succ
+[D][1970/10/12/23:52:31][network/networkswitch.c<NetWorkGetInfo>:558]NetWorkGetInfo ethOrWifi [0]
+[D][1970/10/12/23:52:31][network/networkswitch.c<NetWorkGetInfo>:598]networkparam->NetWorkParam.Ipaddr [192.168.168.1]
+[D][1970/10/12/23:52:31][network/networkswitch.c<NetWorkGetInfo>:619]networkparam->NetWorkParam.Ipaddr [255.255.255.0]
+Mac address is 70:3a:2d:00:3a:d5
+[M][1970/10/12/23:52:31][param/param.c<SysConfigSave>:248]open /system/param/factory.ini success
+[D][1970/10/12/23:52:31][network/networkswitch.c<NetWorkExchangeConnectProc>:1435]link:0 WifiPreType:3
+
+
+--------waitcnt[1]--------
+add 30k noise data to init recognizer
+signalAnalyser init:3.091738
+[D][1970/10/12/23:52:33][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[298]------
+
+--------waitcnt[0]--------
+add 30k noise data to init recognizer
+0xf0: 0x20
+
+
+
+0xf1: 0x53
+
+
+
+[D][1970/10/12/23:52:35][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[296]------
+-------------Read_ADC_Value[3164] --------------
+[D][1970/10/12/23:52:37][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[294]------
+[D][1970/10/12/23:52:39][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[292]------
+-------------Read_ADC_Value[3164] --------------
+[D][1970/10/12/23:52:41][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[290]------
+[D][1970/10/12/23:52:43][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[288]------
+[D][1970/10/12/23:52:45][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[286]------
+-------------Read_ADC_Value[3164] --------------
+[D][1970/10/12/23:52:47][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[284]------
+[D][1970/10/12/23:52:49][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[282]------
+[D][1970/10/12/23:52:51][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[280]------
+-------------Read_ADC_Value[3164] --------------
+[D][1970/10/12/23:52:53][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[278]------
+[M][1970/10/12/23:52:53][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3164]
+[D][1970/10/12/23:52:55][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[276]------
+[D][1970/10/12/23:52:57][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[274]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:52:59][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[272]------
+[D][1970/10/12/23:53:01][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[270]------
+-------------Read_ADC_Value[3164] --------------
+[D][1970/10/12/23:53:03][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[268]------
+[D][1970/10/12/23:53:05][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[266]------
+[D][1970/10/12/23:53:07][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[264]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:53:09][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[262]------
+[D][1970/10/12/23:53:11][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[260]------
+[D][1970/10/12/23:53:13][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[258]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:53:15][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[256]------
+[M][1970/10/12/23:53:16][hisi1131_wifi/mcu_uart/hi_ext_hal_mcu.c<Uart_CMD_Handle>:539]g_PirLevel [0], IsChage [0], ADC_Value [3160]
+[D][1970/10/12/23:53:17][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[254]------
+[D][1970/10/12/23:53:19][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[252]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:53:21][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[250]------
+[D][1970/10/12/23:53:23][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[248]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:53:25][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[246]------
+[D][1970/10/12/23:53:27][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[244]------
+[D][1970/10/12/23:53:29][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[242]------
+-------------Read_ADC_Value[3160] --------------
+[D][1970/10/12/23:53:31][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[240]------
+[D][1970/10/12/23:53:31][audio/hiaudio.c<AudioWifiVoice>:1422]Test audio alarm....
+[M][1970/10/12/23:53:31][audio/hiaudio.c<AgingAlarmAudioThread>:1165]AlarmPlayManageInf.FilePath = /system/www/vwificonfig.wav
+udioRateTo8!
+stopAudioCaptureThread......1
+[M][1970/10/12/23:53:31][audio/hiaudio.c<AudioEncodeThreadProcess>:903]leave AudioCaptureThreadProcess
+stopAudioCaptureThread......2
+[D][1970/10/12/23:53:32][audio/hiaudio.c<InitAudio>:235]open /dev/acodec
+[D][1970/10/12/23:53:32][audio/hiaudio.c<InitAudio>:328]ACODEC_SET_GAIN_MICL = 31
+SysParamGetAudioOutVolume...............31
+AudioOutputControl 0
+[M][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioAI>:420]u32ClkSel[0] : enWorkmode[0]. 160
+
+[M][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioAO>:521]HI_MPI_A0_enable_AoDevId(0)_AoChn(0)
+
+[M][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioDecode>:659]StartAudioDecode Success
+[M][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioVQE>:698]StartAudioVQE
+[E][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioVQE>:743]HI_MPI_AO_SetVqeAttr failed with a0168003
+[E][1970/10/12/23:53:32][audio/hiaudio.c<StartAudioVQE>:749]HI_MPI_AO_EnableVqe failed with a0168007
+AudioOutputControl 1
+[D][1970/10/12/23:53:33][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[238]------
+[D][1970/10/12/23:53:35][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[236]------
+-------------Read_ADC_Value[3148] --------------
+AudioOutputControl 0
+
+audioRateTo44!
+[D][1970/10/12/23:53:37][network/networkswitch.c<NetWorkSleepManageThreadProc>:2405]------softApConfigTimes[234]------
+
